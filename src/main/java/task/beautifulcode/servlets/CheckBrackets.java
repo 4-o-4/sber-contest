@@ -1,7 +1,7 @@
 package task.beautifulcode.servlets;
 
 import task.beautifulcode.JsonRequest;
-import task.beautifulcode.Response;
+import task.beautifulcode.JsonResponse;
 import task.beautifulcode.models.Data;
 import task.beautifulcode.service.CheckBracketsData;
 
@@ -16,7 +16,7 @@ public class CheckBrackets extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        new Response(
+        new JsonResponse(
             new CheckBracketsData(
                 new JsonRequest<Data>(req).get(Data.class))
         ).send(resp);

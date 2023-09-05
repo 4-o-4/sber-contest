@@ -16,8 +16,13 @@ public class JsonRequest<T> {
         this.req = req;
     }
 
-    public T get(Class<T> clazz) throws JsonProcessingException {
-        return MAPPER.readValue(this.toString(), clazz);
+    public T get(Class<T> clazz) {
+        try {
+            return MAPPER.readValue(this.toString(), clazz);
+        } catch (JsonProcessingException e) {
+            System.err.println(e.getMessage());
+            return null;
+        }
     }
 
     @Override

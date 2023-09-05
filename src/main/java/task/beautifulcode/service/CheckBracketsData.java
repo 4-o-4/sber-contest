@@ -20,6 +20,8 @@ public class CheckBracketsData implements Supplier<String> {
 
     @Override
     public String get() {
+        if (this.data == null || this.data.toString() == null || this.data.toString().isEmpty())
+            return "";
         try {
             checkBrackets();
             return MAPPER.writerWithDefaultPrettyPrinter().writeValueAsString(this);
