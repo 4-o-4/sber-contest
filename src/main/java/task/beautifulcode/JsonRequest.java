@@ -17,8 +17,7 @@ public class JsonRequest<T> {
     }
 
     public T get(Class<T> clazz) throws JsonProcessingException {
-        String string = this.toString();
-        return MAPPER.readValue(string, clazz);
+        return MAPPER.readValue(this.toString(), clazz);
     }
 
     @Override
