@@ -3,7 +3,7 @@ package task.beautifulcode.service;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import task.beautifulcode.models.Data;
+import task.beautifulcode.model.Data;
 
 import java.util.function.Supplier;
 

@@ -1,4 +1,4 @@
-package task.beautifulcode.servlets;
+package task.beautifulcode.servlet;
 
 import org.junit.jupiter.api.Test;
 

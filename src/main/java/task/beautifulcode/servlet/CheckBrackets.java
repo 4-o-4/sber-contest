@@ -1,8 +1,8 @@
-package task.beautifulcode.servlets;
+package task.beautifulcode.servlet;
 
 import task.beautifulcode.JsonRequest;
 import task.beautifulcode.JsonResponse;
-import task.beautifulcode.models.Data;
+import task.beautifulcode.model.Data;
 import task.beautifulcode.service.CheckBracketsData;
 
 import javax.servlet.annotation.WebServlet;
